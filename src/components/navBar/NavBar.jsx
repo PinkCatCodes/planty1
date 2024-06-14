@@ -67,6 +67,16 @@ function Navbar() {
               Home
             </Nav.Link>
           </li>
+          <li>
+            <Nav.Link
+              as={Link}
+              to="/about"
+              onClick={closeMenu}
+              className="navbar--content"
+            >
+              About
+            </Nav.Link>
+          </li>
           <DropDown />
         </ul>
       </div>
@@ -76,8 +86,8 @@ function Navbar() {
 
 export default Navbar;
 
-{
-  /*import React, { useState, useEffect } from "react";
+/*
+  import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap"; // Import Nav from react-bootstrap
 import Dropdown from "./DropDown";
@@ -164,13 +174,11 @@ function Navbar() {
             </Link>
           </li>
           {/* Add additional navigation links here */
-}
-{
-  /*</ul>
+
+/*</ul>
       </div>
     </nav>
   );
 }
 
 export default Navbar;*/
-}
