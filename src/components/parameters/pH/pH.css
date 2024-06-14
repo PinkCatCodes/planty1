@@ -1,0 +1,66 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px;
+  }
+  
+  .pHContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px; /* Add gap between child elements */
+  }
+  
+  .pHValue,
+  .pHStatus {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+   
+  }
+  
+  @media (max-width: 768px) {
+    .pHContainer {
+      flex-direction: column;
+    }
+  }
+
+
+  /* pHInput.css */
+
+  .pHInput input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+.pHInput,
+.pHLastFetch {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  text-align: center;
+ 
+}
+
+.pHInput button {
+  padding: 8px 16px;
+  background-color: #0ae393;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.pHInput button:hover {
+  background-color: #00b368;
+}
+
+  

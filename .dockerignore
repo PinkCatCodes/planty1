@@ -1,0 +1,14 @@
+#Consistency Across Environments:
+
+#Fresh Installations: By not copying node_modules from your local environment, you ensure that dependencies are 
+#installed fresh within the Docker container. This reduces the risk of inconsistencies due to local
+# environment-specific issues or configurations.
+#Controlled Dependency Versions: The dependencies will be installed based on the versions specified 
+#in your package.json and package-lock.json files, ensuring consistency across different environments
+# (development, staging, production).
+#Reduced Docker Image Size:
+
+#Smaller Images: node_modules can be quite large, and including it in your Docker
+# image can significantly increase the image size. Smaller images are faster to build, transfer, and deploy.
+
+node_modules

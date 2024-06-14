@@ -1,0 +1,88 @@
+/* WaterLevelContainer.css */
+  
+
+
+.water-level-container {
+    padding-top: 90px; /* Change to padding-top to move WATER LEVEL title down */
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit to create as many columns as possible with minimum width of 300px */
+    gap: 20px; /* Add gap between child elements */
+    justify-content: center; /* Center items horizontally */
+}
+
+.last-fetched3,
+.send-data-form3,
+.dangerThresholds3,
+.warningThresholds3,
+.notification3
+ {
+    border: 2px solid #ccc; /* Add borders */
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin between items */
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .container3 {
+        grid-template-columns: 1fr; /* Change to single column layout on smaller screens */
+    }
+}
+
+
+/* Graph container */
+.graph3 {
+  grid-column: span 2; /* Make the graph span two grid columns */
+  border: 2px solid #ccc; /* Add borders */
+  padding: 10px;
+  margin-bottom: 20px; /* Add margin between items */
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Adjust graph size on mobile screens */
+@media screen and (max-width: 768px) {
+  .graph3{
+      grid-column: span 1; /* Make the graph span a single grid column */
+  }
+}
+
+
+
+   /* SendDataForm css */
+    
+    #input3 {
+        padding: 8px;
+        margin-right: 10px;
+        margin-left: 10px;;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      .button3 {
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        
+      }
+      
+      .button3:hover {
+        background-color: #45a049;
+      }
+      @media screen and (max-width: 768px) {
+        #input3 {
+          margin-left: 50px; /* Add space below the input field */
+          margin-right: 50px;
+        }
+      }
+   
+  
+  
