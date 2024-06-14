@@ -15,11 +15,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
-      - name: Authenticate Vercel CLI
-        run: vercel login --token ${{ secrets.VERCEL_TOKEN }}
       - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment production
+        run: vercel pull --yes --environment production --token ${{ secrets.VERCEL_TOKEN }}
       - name: Build Project Artifacts
-        run: vercel build --prod
+        run: vercel build --prod --token ${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prod
+        run: vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }}
+
