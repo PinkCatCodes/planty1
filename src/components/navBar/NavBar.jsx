@@ -77,6 +77,16 @@ function Navbar() {
               About
             </Nav.Link>
           </li>
+          <li>
+            <Nav.Link
+              as={Link}
+              to="/contact"
+              onClick={closeMenu}
+              className="navbar--content"
+            >
+              Contact
+            </Nav.Link>
+          </li>
           <DropDown />
         </ul>
       </div>
