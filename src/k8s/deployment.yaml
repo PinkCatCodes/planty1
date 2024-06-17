@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: planty1
+  labels:
+    app: planty1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: planty1
+  template:
+    metadata:
+      labels:
+        app: planty1
+    spec:
+      containers:
+      - name: planty1
+        image: brigitac/planty1:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+
